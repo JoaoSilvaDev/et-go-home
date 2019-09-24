@@ -12,4 +12,9 @@ public class UIManager : MonoBehaviour
         givePieceButton.SetActive(false);
         finishUI.SetActive(true);
     }
+
+    public void CheckForPieces()
+    {
+
+    }
 }
