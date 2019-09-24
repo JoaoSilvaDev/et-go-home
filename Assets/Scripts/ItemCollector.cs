@@ -4,30 +4,39 @@ using UnityEngine;
 
 public class ItemCollector : MonoBehaviour
 {
-    // Range around character where player can grab items
-    public float range;
+    [SerializeField] private Inventory _inventory;
+
+    [Tooltip("Range around character where player can grab items")]
+    [SerializeField]
+    private float range;
 
     void Update()
     {
-        if (Input.touchCount > 0)
+        if (Input.GetMouseButtonDown(0))
             GrabItem();
     }
 
     void GrabItem()
     {
-        Touch touch = Input.GetTouch(0);
-
-        if (touch.phase == TouchPhase.Began)
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
         {
-            Ray ray = Camera.main.ScreenPointToRay(touch.position);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
+            if(hit.collider.gameObject.CompareTag("Item"))
             {
-                if(hit.collider.gameObject.CompareTag("Item"))
+                var item = hit.transform.GetComponent<Item>();
+
+                if(item != null)
                 {
-                    Debug.Log("Collected " + hit.collider.gameObject.GetComponent<Item>().title);
+                    CollectItem(item);
                 }
             }
         }
+    }
+
+    private void CollectItem(Item item)
+    {
+        item.Collect();
+        _inventory.AddItem(item);
     }
 }

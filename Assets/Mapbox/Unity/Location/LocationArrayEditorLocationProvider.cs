@@ -42,7 +42,6 @@
 
 		protected override void SetLocation()
 		{
-            Debug.Log("wew");
 			_currentLocation.UserHeading = _heading;
 			_currentLocation.LatitudeLongitude = LatitudeLongitude;
 			_currentLocation.Accuracy = _accuracy;
