@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class Quest : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Quest : MonoBehaviour
     public Text dialogueText;
     public GameObject questUI;
 
+    public UnityEvent FinishedDialogue;
     public int sceneToLoad;
 
     private int sentenceIndex = 0;
@@ -25,13 +27,8 @@ public class Quest : MonoBehaviour
         sentenceIndex++;
 
         if (sentenceIndex > sentences.Length - 1)
-        {
-            questUI.SetActive(false);
-        }
+            FinishedDialogue.Invoke();
         else
-        {
             dialogueText.text = sentences[sentenceIndex];
-            Debug.Log("Changed sentence");
-        }
     }
 }
