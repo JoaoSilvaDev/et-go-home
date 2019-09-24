@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -3384401003617851411}
   m_Layer: 0
   m_Name: Satellite
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,5 +109,8 @@ MonoBehaviour:
   id: 1
   title: Satellite
   location: Jardim
-  latitude: 38.755926
-  longitude: -9.157398
+  latitude: 38.75719456
+  longitude: -9.1575995
+  onCollect:
+    m_PersistentCalls:
+      m_Calls: []

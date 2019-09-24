@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1995296496166190485}
   m_Layer: 0
   m_Name: Wing
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,3 +110,6 @@ MonoBehaviour:
   location: "Est\xE1tua de D. Jo\xE3o I"
   latitude: 38.758624
   longitude: -9.155418
+  onCollect:
+    m_PersistentCalls:
+      m_Calls: []

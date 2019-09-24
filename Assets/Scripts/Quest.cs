@@ -10,7 +10,6 @@ public class Quest : MonoBehaviour
     [TextArea(1, 5)]
     public string[] sentences;
     public Text dialogueText;
-    public GameObject questUI;
 
     public UnityEvent FinishedDialogue;
     public int sceneToLoad;

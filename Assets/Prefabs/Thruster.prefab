@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5285228881698998581}
   m_Layer: 0
   m_Name: Thruster
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,3 +110,6 @@ MonoBehaviour:
   location: Mac Donalds
   latitude: 38.757032
   longitude: -9.153958
+  onCollect:
+    m_PersistentCalls:
+      m_Calls: []
