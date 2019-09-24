@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/QuestTest.unity
-    guid: 4eb53886bb1f56f488da1480f4af9738
-  - enabled: 1
-    path: Assets/Scenes/Main.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/TestingInventorySystem.unity
+    guid: 0107f3b86da8f5a4c9c9f797ff7fab62
   m_configObjects: {}
