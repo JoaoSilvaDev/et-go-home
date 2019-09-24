@@ -6,8 +6,10 @@ using UnityEngine.UI;
 
 public class Quest : MonoBehaviour
 {
+    [TextArea(1, 5)]
     public string[] sentences;
     public Text dialogueText;
+    public GameObject questUI;
 
     public int sceneToLoad;
 
@@ -24,8 +26,7 @@ public class Quest : MonoBehaviour
 
         if (sentenceIndex > sentences.Length - 1)
         {
-            SceneManager.LoadScene(sceneToLoad);
-
+            questUI.SetActive(false);
         }
         else
         {
