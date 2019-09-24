@@ -512,5 +512,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 8330834404893544756, guid: 60b5efb7acceeb4428410668b28397a5,
+        type: 3}
+      propertyPath: sentences.Array.data[1]
+      value: Now i can return to my home in wakanda forever YEA MAN WOOOO!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330834404893544756, guid: 60b5efb7acceeb4428410668b28397a5,
+        type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: VERY MANY TAHNK YOU MAN! I VERY HAPY NOW! WOOOO
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60b5efb7acceeb4428410668b28397a5, type: 3}
