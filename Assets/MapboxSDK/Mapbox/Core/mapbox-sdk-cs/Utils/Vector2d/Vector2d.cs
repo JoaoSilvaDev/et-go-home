@@ -3,8 +3,9 @@ namespace Mapbox.Utils
     using Mapbox.Json;
     using System;
 	using System.Globalization;
+    using UnityEngine;
 
-	[Serializable]
+    [Serializable]
 	public struct Vector2d
 	{
 		public const double kEpsilon = 1E-05d;
@@ -253,6 +254,8 @@ namespace Mapbox.Utils
 		{
 			return new Vector2d(Mathd.Max(lhs.x, rhs.x), Mathd.Max(lhs.y, rhs.y));
 		}
+
+        public static implicit operator Vector2 (Vector2d v) { return new Vector2((float)v.x, (float)v.y); }
 
 		public double[] ToArray()
 		{
