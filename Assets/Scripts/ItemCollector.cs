@@ -28,10 +28,17 @@ public class ItemCollector : MonoBehaviour
 
                 if(item != null)
                 {
-                    CollectItem(item);
+                    if(Vector3.Distance(transform.position, item.transform.position) < range)
+                        CollectItem(item);
                 }
             }
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, range);
     }
 
     private void CollectItem(Item item)
