@@ -220,7 +220,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5824269617994574689
 RectTransform:
   m_ObjectHideFlags: 0
@@ -254,9 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - 'Damn it!
-
-    Looks like I crashed my ship... again.'
+  - Oops, looks like I crashed my ship... again.
   - "Wow, you must be a human, I\u2019ve never seen one of you before."
   - You look taller in person compared to the 4D mappings they showed us in class.
   - Anyway I was getting interdimensional ice cream and suddenly a Space Donut hit
@@ -359,7 +357,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Look for the crashed ship
+  m_Text: Find the crashed ship parts
 --- !u!1 &4782089604149321786
 GameObject:
   m_ObjectHideFlags: 0

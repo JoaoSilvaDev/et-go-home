@@ -598,11 +598,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1638059881744458, guid: 35ce2bb4caba9434db5e656796b632b1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1890051226035590, guid: 35ce2bb4caba9434db5e656796b632b1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4886150424162858, guid: 35ce2bb4caba9434db5e656796b632b1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -676,7 +676,7 @@ PrefabInstance:
     - target: {fileID: 114105500206378512, guid: 35ce2bb4caba9434db5e656796b632b1,
         type: 3}
       propertyPath: _options.extentOptions.extentType
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114105500206378512, guid: 35ce2bb4caba9434db5e656796b632b1,
         type: 3}
@@ -686,6 +686,60 @@ PrefabInstance:
     - target: {fileID: 114105500206378512, guid: 35ce2bb4caba9434db5e656796b632b1,
         type: 3}
       propertyPath: _options.extentOptions.defaultExtents.rangeAroundTransformOptions.disposeBuffer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114105500206378512, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: _imagery._layerProperty.sourceType
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114105500206378512, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: _initializeOnStart
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114105500206378512, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: _options.extentOptions.defaultExtents.rangeAroundCenterOptions.west
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114105500206378512, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: _options.extentOptions.defaultExtents.rangeAroundCenterOptions.north
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114105500206378512, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: _options.extentOptions.defaultExtents.rangeAroundCenterOptions.east
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114105500206378512, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: _options.extentOptions.defaultExtents.rangeAroundCenterOptions.south
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114105500206378512, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: _imagery._layerProperty.sourceOptions.layerSource.Id
+      value: mapbox://styles/joaosdev/ck0wlolng095f1clyyesxtdcu
+      objectReference: {fileID: 0}
+    - target: {fileID: 114105500206378512, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: _imagery._layerProperty.rasterOptions.useCompression
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000691678, guid: 35ce2bb4caba9434db5e656796b632b1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23386010693667174, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23748609930179622, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114658503893516242, guid: 35ce2bb4caba9434db5e656796b632b1,
@@ -737,6 +791,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -11.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 1629337726123159996, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: zoomSpeed
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1629337726926231558, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1629337726926231559, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1629337728182086392, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1629337728182086393, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35ce2bb4caba9434db5e656796b632b1, type: 3}
