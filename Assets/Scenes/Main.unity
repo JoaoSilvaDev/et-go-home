@@ -343,7 +343,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 4.0002788e+9, y: 4.543584e+30, z: 223.42578, w: 1.9282594e+31}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -361,18 +361,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!114 &761313489 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 554179666, guid: 351b3d29f82f3ae4d93cd74affcab61c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1685926057}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &787231176
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,6 +693,26 @@ PrefabInstance:
       propertyPath: _latitudeLongitude.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6946895848686284283, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: m_VertexStreams.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946895848686284283, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946895848686284283, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: m_VertexStreams.Array.data[1]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946895848686284283, guid: 35ce2bb4caba9434db5e656796b632b1,
+        type: 3}
+      propertyPath: m_VertexStreams.Array.data[2]
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1629337728182086394, guid: 35ce2bb4caba9434db5e656796b632b1,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -884,16 +892,10 @@ PrefabInstance:
     - target: {fileID: 468389517, guid: 351b3d29f82f3ae4d93cd74affcab61c, type: 3}
       propertyPath: dialogueText
       value: 
-      objectReference: {fileID: 761313489}
+      objectReference: {fileID: 0}
     - target: {fileID: 468389517, guid: 351b3d29f82f3ae4d93cd74affcab61c, type: 3}
       propertyPath: questUI
       value: 
-      objectReference: {fileID: 1904366850}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 351b3d29f82f3ae4d93cd74affcab61c, type: 3}
---- !u!1 &1904366850 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2043500691, guid: 351b3d29f82f3ae4d93cd74affcab61c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1685926057}
-  m_PrefabAsset: {fileID: 0}

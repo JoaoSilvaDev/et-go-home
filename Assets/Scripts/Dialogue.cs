@@ -1,18 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
-public class Quest : MonoBehaviour
+public class Dialogue : MonoBehaviour
 {
     [TextArea(1, 5)]
     public string[] sentences;
     public Text dialogueText;
 
     public UnityEvent FinishedDialogue;
-    public int sceneToLoad;
 
     private int sentenceIndex = 0;
 
@@ -21,7 +17,7 @@ public class Quest : MonoBehaviour
         dialogueText.text = sentences[sentenceIndex];
     }
 
-    public void ChangeSentence()
+    public void NextSentence()
     {
         sentenceIndex++;
 
