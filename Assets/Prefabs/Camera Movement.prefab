@@ -186,7 +186,7 @@ MonoBehaviour:
   topAnchor: {fileID: 390204800630239112}
   bottomAnchor: {fileID: 390204799650127210}
   lookAtTarget: 1
-  lookAtHeightOffset: 3.5
+  lookAtHeightOffset: 3
   zoomSpeed: 0.3
   zoomSmoothSpeed: 50
 --- !u!1 &390204799650127211
