@@ -6,6 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  m_configObjects: {}
+    path: Assets/Scenes/01ShipIntro.unity
+    guid: d3f07c2b40f6fc64e88191812af4c719
+  m_configObjects:
+    com.unity.xr.arcore.PlayerSettings: {fileID: 11400000, guid: 9e0d7e30714b8d542b02afeaeb413cf4,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4c5e48bbbb7a56b4f8ad3adadf0257be,
+      type: 2}
