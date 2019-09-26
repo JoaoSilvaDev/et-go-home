@@ -51,5 +51,5 @@ public class Inventory
             Debug.LogWarning("The inventory already contains this item - " + id);
     }
 
-    public static int[] GetItems() => _items.ToArray();
+    public static int[] GetItems() => _items == null ? new int[0] : _items.ToArray();
 }

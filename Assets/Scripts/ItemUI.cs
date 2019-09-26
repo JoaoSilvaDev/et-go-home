@@ -28,8 +28,7 @@ public class ItemUI : MonoBehaviour
 
     public void OnItemCollected(int id)
     {
-        Color col = icons[id].color;
-        col.a = 1;
-        icons[id].color = col;
+        icons[id].color = Color.red;
+        print("updated ui " + id);
     }
 }

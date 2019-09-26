@@ -11,15 +11,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Test Scenes/AllInOne Bitch.unity
     guid: b553f1aac5db2234e8a461cbf2e77ea7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/02.unity
     guid: 301f2e8066e36e445baf8a48501116b8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test Scenes/Facial.unity
     guid: 8c27ef0482ce85f48ab85e7c75eb7c13
   - enabled: 1
     path: Assets/Scenes/04.unity
     guid: 32319ca733d013c41b7626955daad5d4
+  - enabled: 1
+    path: Assets/Scenes/05.unity
+    guid: 3f1faffe90db64e439f7de6b90be40a1
   m_configObjects:
     com.unity.xr.arcore.PlayerSettings: {fileID: 11400000, guid: 9e0d7e30714b8d542b02afeaeb413cf4,
       type: 2}

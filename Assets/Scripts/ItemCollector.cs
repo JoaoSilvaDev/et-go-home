@@ -42,12 +42,16 @@ public class ItemCollector : MonoBehaviour
     {
         SelectedItem = item.id;
         SceneManager.LoadScene(itemCollectScene);
+
+        print("Selected item " + item.id);
     }
 
     public static void CollectItem()
     {
         Inventory.AddItem(SelectedItem);
+        print("Collected item " + SelectedItem);
         SelectedItem = -1;
+
     }
 
     private void OnDrawGizmosSelected()

@@ -19,9 +19,16 @@ public class ItemsSpawner : MonoBehaviour
     void Start()
     {
         _spawnedItems = new List<Item>();
+        var inventory = new List<int>(Inventory.GetItems());
 
         for (int i = 0; i < _itemsList.Items.Length; i++)
         {
+            if (inventory.Contains(i))
+            {
+                print("not instantiated " + i);
+                continue;
+            }
+
             var item = Instantiate(_itemsList.Items[i]);
 
             item.id = i;
