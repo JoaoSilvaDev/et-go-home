@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour
+public class Inventory
 {
-    private List<int> _items;
+    private static List<int> _items;
 
-    public Action<int> onAddItem;
+    public static Action<int> onAddItem;
 
     public void AddItem(Item item)
     {
@@ -19,8 +19,6 @@ public class Inventory : MonoBehaviour
             _items.Add(item.id);
             if (onAddItem != null)
                 onAddItem.Invoke(item.id);
-
-            print("item " + item.id + " added");
         }
         else
             Debug.LogWarning("The inventory already contains this item - " + item.title);

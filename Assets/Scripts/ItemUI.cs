@@ -6,11 +6,15 @@ using UnityEngine.UI;
 public class ItemUI : MonoBehaviour
 {
     public Image[] icons;
-    public Inventory inventory;
 
     private void Start()
     {
-        inventory.onAddItem += OnItemCollected;
+        Inventory.onAddItem += OnItemCollected;
+    }
+
+    private void OnDestroy()
+    {
+        Inventory.onAddItem -= OnItemCollected;
     }
 
     public void OnItemCollected(int id)
