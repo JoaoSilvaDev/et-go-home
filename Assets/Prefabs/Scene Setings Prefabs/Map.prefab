@@ -255,7 +255,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a871bc870285eaf4cba553a4fde7253a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inventory: {fileID: 1465018761}
   range: 17
 --- !u!1 &1080079784494230
 GameObject:
@@ -313,7 +312,6 @@ GameObject:
   - component: {fileID: 114105500206378512}
   - component: {fileID: 114086566548189782}
   - component: {fileID: 1465018759}
-  - component: {fileID: 1465018761}
   m_Layer: 0
   m_Name: Map
   m_TagString: Untagged
@@ -561,18 +559,6 @@ MonoBehaviour:
   - {fileID: -3384401003617851411, guid: 1620a1a994b304b49a87386961af938e, type: 3}
   - {fileID: 5285228881698998581, guid: 62615bdbbd4cad443842c467c8c197ed, type: 3}
   - {fileID: 1995296496166190485, guid: 7678683e193dbfc4ea116d20c29e472b, type: 3}
---- !u!114 &1465018761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1094528686802348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38aa24282dcad2047b8608c5c772ff4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1150654482131460
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,7 +614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4886150424162858}
   m_Layer: 0
-  m_Name: LocationBasedGame
+  m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
