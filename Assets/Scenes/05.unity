@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 138244541}
-  mapSceneIndex: 0
+  mapSceneIndex: 3
 --- !u!1 &277712634
 GameObject:
   m_ObjectHideFlags: 0
