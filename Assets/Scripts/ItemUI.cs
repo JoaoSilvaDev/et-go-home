@@ -17,10 +17,18 @@ public class ItemUI : MonoBehaviour
         Inventory.onAddItem -= OnItemCollected;
     }
 
+    private void OnEnable()
+    {
+        var items = Inventory.GetItems();
+        foreach (var item in items)
+        {
+            OnItemCollected(item);
+        }
+    }
+
     public void OnItemCollected(int id)
     {
-        Color col = icons[id].color;
-        col.a = 1;
-        icons[id].color = col;
+        icons[id].color = Color.red;
+        print("updated ui " + id);
     }
 }

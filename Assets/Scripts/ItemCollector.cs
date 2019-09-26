@@ -1,22 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ItemCollector : MonoBehaviour
 {
-    [SerializeField] private Inventory _inventory;
-
     [Tooltip("Range around character where player can grab items")]
     [SerializeField]
     private float range;
 
+    [SerializeField] private int itemCollectScene;
+
+    public static int SelectedItem { get; private set; } = -1;
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
-            GrabItem();
+            ClickOnItem();
     }
 
-    void GrabItem()
+    void ClickOnItem()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
@@ -29,21 +32,31 @@ public class ItemCollector : MonoBehaviour
                 if(item != null)
                 {
                     if(Vector3.Distance(transform.position, item.transform.position) < range)
-                        CollectItem(item);
+                        SelectItem(item);
                 }
             }
         }
+    }
+
+    private void SelectItem(Item item)
+    {
+        SelectedItem = item.id;
+        SceneManager.LoadScene(itemCollectScene);
+
+        print("Selected item " + item.id);
+    }
+
+    public static void CollectItem()
+    {
+        Inventory.AddItem(SelectedItem);
+        print("Collected item " + SelectedItem);
+        SelectedItem = -1;
+
     }
 
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
-    }
-
-    private void CollectItem(Item item)
-    {
-        item.Collect();
-        _inventory.AddItem(item);
     }
 }

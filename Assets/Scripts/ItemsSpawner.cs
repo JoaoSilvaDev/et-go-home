@@ -12,17 +12,26 @@ public class ItemsSpawner : MonoBehaviour
     float _spawnScale = 100f;
 
     [SerializeField]
-    Item[] _itemsToInstantiate;
+    ItemsList _itemsList;
 
     List<Item> _spawnedItems;
 
     void Start()
     {
         _spawnedItems = new List<Item>();
+        var inventory = new List<int>(Inventory.GetItems());
 
-        for (int i = 0; i < _itemsToInstantiate.Length; i++)
+        for (int i = 0; i < _itemsList.Items.Length; i++)
         {
-            var item = Instantiate(_itemsToInstantiate[i]);
+            if (inventory.Contains(i))
+            {
+                print("not instantiated " + i);
+                continue;
+            }
+
+            var item = Instantiate(_itemsList.Items[i]);
+
+            item.id = i;
 
             item.transform.localPosition = _map.GeoToWorldPosition(
                 new Vector2d(item.latitude, item.longitude), true);

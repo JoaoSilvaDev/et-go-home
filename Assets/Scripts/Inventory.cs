@@ -9,8 +9,14 @@ public class Inventory
 
     public static Action<int> onAddItem;
 
-    public void AddItem(Item item)
+    public static void AddItem(Item item)
     {
+        if (item == null || item.id < 0)
+        {
+            Debug.LogWarning("There is no item selected");
+            return;
+        }
+
         if (_items == null)
             _items = new List<int>();
 
@@ -24,5 +30,26 @@ public class Inventory
             Debug.LogWarning("The inventory already contains this item - " + item.title);
     }
 
-    public int[] GetItems() => _items.ToArray();
+    public static void AddItem(int id)
+    {
+        if (id < 0)
+        {
+            Debug.LogWarning("There is no item selected");
+            return;
+        }
+
+        if (_items == null)
+            _items = new List<int>();
+
+        if (!_items.Contains(id))
+        {
+            _items.Add(id);
+            if (onAddItem != null)
+                onAddItem.Invoke(id);
+        }
+        else
+            Debug.LogWarning("The inventory already contains this item - " + id);
+    }
+
+    public static int[] GetItems() => _items == null ? new int[0] : _items.ToArray();
 }

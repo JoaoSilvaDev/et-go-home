@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class Item : MonoBehaviour
 {
-    public int id;
+    [HideInInspector] public int id;
     public string title;
     public string location;
     public double latitude;
