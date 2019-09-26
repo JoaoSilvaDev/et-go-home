@@ -12,7 +12,7 @@ public class ItemsSpawner : MonoBehaviour
     float _spawnScale = 100f;
 
     [SerializeField]
-    Item[] _itemsToInstantiate;
+    ItemsList _itemsList;
 
     List<Item> _spawnedItems;
 
@@ -20,9 +20,11 @@ public class ItemsSpawner : MonoBehaviour
     {
         _spawnedItems = new List<Item>();
 
-        for (int i = 0; i < _itemsToInstantiate.Length; i++)
+        for (int i = 0; i < _itemsList.Items.Length; i++)
         {
-            var item = Instantiate(_itemsToInstantiate[i]);
+            var item = Instantiate(_itemsList.Items[i]);
+
+            item.id = i;
 
             item.transform.localPosition = _map.GeoToWorldPosition(
                 new Vector2d(item.latitude, item.longitude), true);

@@ -555,10 +555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _map: {fileID: 114105500206378512}
   _spawnScale: 5
-  _itemsToInstantiate:
-  - {fileID: -3384401003617851411, guid: 1620a1a994b304b49a87386961af938e, type: 3}
-  - {fileID: 5285228881698998581, guid: 62615bdbbd4cad443842c467c8c197ed, type: 3}
-  - {fileID: 1995296496166190485, guid: 7678683e193dbfc4ea116d20c29e472b, type: 3}
+  _itemsList: {fileID: 11400000, guid: 91aacb40114906d41addcc2537cd6463, type: 2}
 --- !u!1 &1150654482131460
 GameObject:
   m_ObjectHideFlags: 0
