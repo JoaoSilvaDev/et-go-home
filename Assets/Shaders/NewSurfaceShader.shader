@@ -2,10 +2,12 @@
 {
 	Properties
 	{
+		_MainTex ("Texture", 2D) = "white" {}
 		[HDR]_Emission("Emission", Color) = (1, 1, 1, 1)
 		_Glossiness("Smoothness", Range(0,1)) = 0.5
 		_Metallic("Metallic", Range(0,1)) = 0.0
-		_Dissolve ("Dissolve", 2D) = "white" {}
+		//_DissolveTexture ("Dissolve Texture", 2D) = "white" {}
+		//_DissolveAmount ("Dissolve Amount", Range(0,1)) = 0.0
 	}
 		SubShader
 		{
@@ -17,17 +19,20 @@
 			CGPROGRAM
 
 			#pragma surface surf Standard fullforwardshadows alpha:fade
-			#pragma target 3.0			
+			#pragma target 3.0	
 
+			sampler2D _MainTexture;
+			//sampler2D _DissolveTexture;
+			//half _DissolveAmount;
 			half _Glossiness;
 			half _Metallic;
 			float4 _Emission;
 			float4 vertexColor;
-			sampler2D _Dissolve;
 
-			struct Input {
+			struct Input
+			{
+				float2 uv_MainTex;
 				fixed4 color : COLOR;
-				float2 uv_Dissolve;
 			};
 
 			void surf(Input IN, inout SurfaceOutputStandard o)
@@ -37,10 +42,10 @@
 				o.Smoothness = _Glossiness;
 				o.Emission = _Emission;
 
-				half diss = tex2D(_Dissolve, IN.uv_Dissolve).rgb - _Metallic;
-				clip(diss);
+				//half dissolve = tex2D(_DissolveTexture, IN.uv_MainTex).r;
+				//clip(dissolve - (1 - IN.color.a));
 
-				//o.Alpha = IN.color.a;
+				o.Alpha = IN.color.a;
 			}
 			ENDCG
 		}
