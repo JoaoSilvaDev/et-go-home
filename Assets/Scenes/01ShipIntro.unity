@@ -518,7 +518,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Switch Camera
 --- !u!222 &1073527538
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -968,11 +968,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1623278693}
     m_Modifications:
-    - target: {fileID: 4572066993592981582, guid: 3cd0f5761093d524886515a470c7b76b,
-        type: 3}
-      propertyPath: m_Name
-      value: FaceMeshPrefab
-      objectReference: {fileID: 0}
     - target: {fileID: 1119864685814629458, guid: 3cd0f5761093d524886515a470c7b76b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1027,6 +1022,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572066993592981582, guid: 3cd0f5761093d524886515a470c7b76b,
+        type: 3}
+      propertyPath: m_Name
+      value: FaceMeshPrefab
       objectReference: {fileID: 0}
     - target: {fileID: 4349438441535522650, guid: 3cd0f5761093d524886515a470c7b76b,
         type: 3}
