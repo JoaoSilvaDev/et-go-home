@@ -254,7 +254,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Oh, you collected all pieces, now give me my ship back :D
+  m_Text: Place the fixed ship
 --- !u!222 &669522888
 CanvasRenderer:
   m_ObjectHideFlags: 0
