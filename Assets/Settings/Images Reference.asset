@@ -14,4 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GuidLow: 5167612766861660619
   m_GuidHigh: 17395047825238320562
-  m_Images: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 4953317673845782744
+      m_GuidHigh: 6946304670869702282
+    m_SerializedTextureGuid:
+      m_GuidLow: 17759039419420929847
+      m_GuidHigh: 11606085006196674938
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: IMG_20190927_172649
+    m_Texture: {fileID: 0}
