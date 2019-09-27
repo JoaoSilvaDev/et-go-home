@@ -1,11 +1,10 @@
 ﻿Shader "Unlit/OcclusionShader"
 {
 	SubShader
-    {
-        Tags { "Queue"="Geometry" }
-
+	{
+		Tags { "Queue" = "Geometry" }
 		ZWrite On
 		ZTest Equal
 		ColorMask 0
-    }
+	}
 }
