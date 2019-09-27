@@ -45,7 +45,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783026869676243187}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 2cd20201dd5754e41833e6407391e2f2, type: 2}
   m_CullingMode: 0
@@ -85,17 +85,6 @@ MonoBehaviour:
   onPlace:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 783026869676243186}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 783026871156946596}
         m_MethodName: SetActive
         m_Mode: 6
@@ -150,6 +139,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 783026869676243186}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &783026870031059285
 GameObject:
@@ -242,7 +242,6 @@ GameObject:
   - component: {fileID: 783026870095732437}
   - component: {fileID: 783026870095732438}
   - component: {fileID: 783026870095732432}
-  - component: {fileID: 783026870095732433}
   m_Layer: 0
   m_Name: Wing
   m_TagString: Item
@@ -342,23 +341,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &783026870095732433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 783026870095732435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc943b4890068884295466b4331b3d03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inRange: 0
-  marker: {fileID: 0}
-  player: {fileID: 0}
-  mesh: {fileID: 783026871160396259}
-  collector: {fileID: 0}
 --- !u!1 &783026870363257427
 GameObject:
   m_ObjectHideFlags: 0
