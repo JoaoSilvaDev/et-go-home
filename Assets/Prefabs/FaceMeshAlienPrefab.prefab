@@ -88,8 +88,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 4890799864665345502, guid: 5dd8af46292b6d84dae9e8aa325263d5, type: 3}
-  - {fileID: -9168796071809029343, guid: 5dd8af46292b6d84dae9e8aa325263d5, type: 3}
+  - {fileID: 2100000, guid: f323f8d919c3a4e4dbff9c0dc2baa31a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -224,11 +223,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1119864685814629458}
     m_Modifications:
-    - target: {fileID: 480390341198914186, guid: c4c6c4c84a607cf4495cf928f1c9de51,
-        type: 3}
-      propertyPath: m_Name
-      value: Astronaut
-      objectReference: {fileID: 0}
     - target: {fileID: 3526856859684589721, guid: c4c6c4c84a607cf4495cf928f1c9de51,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -298,6 +292,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 480390341198914186, guid: c4c6c4c84a607cf4495cf928f1c9de51,
+        type: 3}
+      propertyPath: m_Name
+      value: Astronaut
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4c6c4c84a607cf4495cf928f1c9de51, type: 3}

@@ -313,6 +313,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Load
       objectReference: {fileID: 0}
+    - target: {fileID: 5195712630074495626, guid: 904fc03d7def70c46959d0bf8772fea4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5195712629772075274, guid: 904fc03d7def70c46959d0bf8772fea4,
+        type: 3}
+      propertyPath: m_Text
+      value: Switch Camera
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 904fc03d7def70c46959d0bf8772fea4, type: 3}
 --- !u!1 &630888398 stripped
@@ -511,7 +521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fb55c6e4a2df264c84e76eda064b278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 5
+  time: 6
   onFinishCounter:
     m_PersistentCalls:
       m_Calls:

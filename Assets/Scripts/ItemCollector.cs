@@ -7,7 +7,7 @@ public class ItemCollector : MonoBehaviour
 {
     [Tooltip("Range around character where player can grab items")]
     [SerializeField]
-    private float range;
+    public float range;
 
     [SerializeField] private int itemCollectScene;
 
