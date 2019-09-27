@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 17
-  itemCollectScene: 1
+  itemCollectScene: 4
 --- !u!114 &1507296710
 MonoBehaviour:
   m_ObjectHideFlags: 0
