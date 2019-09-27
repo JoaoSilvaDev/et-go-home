@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raycastManager: {fileID: 1576377057}
-  objectToInstantiate: {fileID: 4943910753798102211, guid: 2a7d522441a255c4f85e9ff9e421f086,
+  objectToInstantiate: {fileID: -2348195361899402107, guid: be6bbc62dc1ac824da4023bc5d2796c6,
     type: 3}
   camera: {fileID: 1046463801}
   onPlace:
