@@ -62,3 +62,5 @@ sysinfo.txt
 crashlytics-build.properties
 Assets/Shaders/OcclusionShader.shader
 Assets/Shaders/OcclusionShader.shader
+Assets/Shaders/OcclusionShader.shader
+Assets/Shaders/TransparentReceiveShadows.shader.meta
