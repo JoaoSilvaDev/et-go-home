@@ -52,4 +52,5 @@ public class Inventory
     }
 
     public static int[] GetItems() => _items == null ? new int[0] : _items.ToArray();
+    public static int ItemsCount { get => _items == null ? 0 : _items.Count; }
 }

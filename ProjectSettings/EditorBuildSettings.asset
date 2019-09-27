@@ -5,12 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Test Scenes/AllInOne Bitch.unity
-    guid: b553f1aac5db2234e8a461cbf2e77ea7
-  - enabled: 0
-    path: Assets/Scenes/Test Scenes/Facial.unity
-    guid: 8c27ef0482ce85f48ab85e7c75eb7c13
   - enabled: 1
     path: Assets/Scenes/01ShipIntro.unity
     guid: d3f07c2b40f6fc64e88191812af4c719
@@ -26,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/05.unity
     guid: 3f1faffe90db64e439f7de6b90be40a1
+  - enabled: 1
+    path: Assets/Scenes/06.unity
+    guid: 39e18fabfe35fee4686e2a0db5661ffd
   m_configObjects:
     com.unity.xr.arcore.PlayerSettings: {fileID: 11400000, guid: 9e0d7e30714b8d542b02afeaeb413cf4,
       type: 2}
