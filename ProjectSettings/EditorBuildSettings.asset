@@ -5,24 +5,27 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/01ShipIntro.unity
     guid: d3f07c2b40f6fc64e88191812af4c719
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/02.unity
     guid: 301f2e8066e36e445baf8a48501116b8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/03AlienIntro.unity
     guid: df2886dd5d531d2459a580e7694246f9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/04.unity
     guid: 32319ca733d013c41b7626955daad5d4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/05.unity
     guid: 3f1faffe90db64e439f7de6b90be40a1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/06.unity
     guid: 39e18fabfe35fee4686e2a0db5661ffd
+  - enabled: 1
+    path: Assets/Scenes/Test Scenes/Camera Test.unity
+    guid: bdf7f10ced95b6645a262b2208402cac
   m_configObjects:
     com.unity.xr.arcore.PlayerSettings: {fileID: 11400000, guid: 9e0d7e30714b8d542b02afeaeb413cf4,
       type: 2}

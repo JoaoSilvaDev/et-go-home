@@ -15,44 +15,82 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private float zoomSpeed = 0.5f;
     [SerializeField] private float zoomSmoothSpeed = 10f;
 
+    [SerializeField] private float speedToStartRotationOnPinch = 50;
+
     public float currentZoom { get => _currentZoom; set => _currentZoom = Mathf.Clamp01(value); }
     private float _currentZoom = 0;
 
     private float previousTouchDistance;
+    private Vector3 initialTouchDirection;
     private Vector3 previousTouchDirection;
+    private float previousTouchesScreenRelativeAngle;
 
-    private float initialCameraAngle;
-    private float currentCameraAngle;
+    private float currentYawAngle;
+
+    private bool rotatingOnPinch = false;
 
     private void Start()
     {
-        initialCameraAngle = transform.eulerAngles.y;
-        currentCameraAngle = initialCameraAngle;
+        currentYawAngle = transform.eulerAngles.y;
     }
 
     private void Update()
     {
-        if(Input.touchCount == 2)
+        if (Input.touchCount == 2)
         {
             if (Input.touches[1].phase == TouchPhase.Began)
             {
                 previousTouchDistance = GetTouchesDistance();
+                previousTouchesScreenRelativeAngle = GetTouchesScreenRelativeAngle();
             }
             else
             {
+                //zoom camera
                 var newDistance = GetTouchesDistance();
                 var deltaDistance = newDistance - previousTouchDistance;
                 previousTouchDistance = newDistance;
                 currentZoom += deltaDistance * zoomSpeed * Time.deltaTime;
+
+                //rotate camera
+                var newAngle = GetTouchesScreenRelativeAngle();
+                var deltaAngle = newAngle - previousTouchesScreenRelativeAngle;
+                previousTouchesScreenRelativeAngle = newAngle;
+
+                if(rotatingOnPinch)
+                    currentYawAngle += deltaAngle;
+                else
+                {
+                    var rotationSpeed = Mathf.Abs(deltaAngle / Time.deltaTime);
+                    print(rotationSpeed);
+                    if(rotationSpeed >= speedToStartRotationOnPinch)
+                        rotatingOnPinch = true;
+                }
+
+
+                if(Input.touches[1].phase == TouchPhase.Ended)
+                {
+                    rotatingOnPinch = false;
+                }
             }
         }
-        else if(Input.touchCount == 1)
+#if UNITY_ANDROID
+        else if (Input.touchCount == 1)
+#elif UNTIY_EDITOR
+        else if (Input.GetMouseButton(0))
+#endif
         {
-            if(Input.touches[0].phase == TouchPhase.Moved)
+
+            //if (Input.touches[0].phase == TouchPhase.Began)
+            if (Input.GetMouseButtonDown(0))
+            {
+                initialTouchDirection = GetTouchDirectionFromCenter();
+            }
+            //else if (Input.touches[0].phase == TouchPhase.Moved)
+            else
             {
                 var newDirection = GetTouchDirectionFromCenter();
-                var angle = Vector3.SignedAngle(transform.forward, newDirection, Vector3.up);
-                currentCameraAngle = initialCameraAngle - angle;
+                var angle = Vector3.SignedAngle(initialTouchDirection, newDirection, Vector3.up);
+                currentYawAngle -= angle;
             }
         }
 
@@ -64,7 +102,11 @@ public class CameraMovement : MonoBehaviour
     private Vector3 GetTouchDirectionFromCenter()
     {
         Plane plane = new Plane(Vector3.up, transform.position);
+#if UNITY_ANDROID
         Ray ray = camera.ScreenPointToRay(Input.touches[0].position);
+#elif UNTIY_EDITOR
+        Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+#endif
         float enter;
         if (plane.Raycast(ray, out enter))
         {
@@ -78,10 +120,16 @@ public class CameraMovement : MonoBehaviour
 
     private void UpdateYawAngle()
     {
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0,currentCameraAngle,0), Time.deltaTime * zoomSmoothSpeed);
+        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, currentYawAngle, 0), Time.deltaTime * zoomSmoothSpeed);
     }
 
     private float GetTouchesDistance() => (Input.touches[0].position - Input.touches[1].position).magnitude;
+
+    private float GetTouchesScreenRelativeAngle()
+    {
+        var direction = (Input.touches[0].position - Input.touches[1].position).normalized;
+        return Vector2.SignedAngle(Vector2.up, direction);
+    }
 
     private void LookAtTarget()
     {
