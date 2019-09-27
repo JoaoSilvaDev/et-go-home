@@ -56,21 +56,24 @@ public class CameraMovement : MonoBehaviour
                 var deltaAngle = newAngle - previousTouchesScreenRelativeAngle;
                 previousTouchesScreenRelativeAngle = newAngle;
 
-                if(rotatingOnPinch)
-                    currentYawAngle += deltaAngle;
-                else
-                {
-                    var rotationSpeed = Mathf.Abs(deltaAngle / Time.deltaTime);
-                    print(rotationSpeed);
-                    if(rotationSpeed >= speedToStartRotationOnPinch)
-                        rotatingOnPinch = true;
-                }
 
-
-                if(Input.touches[1].phase == TouchPhase.Ended)
+                if (Input.touches[1].phase == TouchPhase.Ended)
                 {
                     rotatingOnPinch = false;
                 }
+                else
+                {
+                    if (rotatingOnPinch)
+                        currentYawAngle += deltaAngle;
+                    else
+                    {
+                        var rotationSpeed = Mathf.Abs(deltaAngle / Time.deltaTime);
+                        print(rotationSpeed);
+                        if (rotationSpeed >= speedToStartRotationOnPinch)
+                            rotatingOnPinch = true;
+                    }
+                }
+
             }
         }
 #if UNITY_ANDROID
