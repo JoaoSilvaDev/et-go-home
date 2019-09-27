@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TransparentReceiveShadows
-  m_Shader: {fileID: 4800000, guid: be3a178c537aad0409c0bbdcb5a63f8d, type: 3}
+  m_Name: Occlusion
+  m_Shader: {fileID: 4800000, guid: 99d375db707abee44b44bb0a8b4492c5, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0

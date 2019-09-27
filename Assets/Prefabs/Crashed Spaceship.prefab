@@ -148,13 +148,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6400161297464887908}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.6130114, w: 0.7900741}
+  m_LocalPosition: {x: -0.8, y: 0.21, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 524811825144713317}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 75.615005}
 --- !u!33 &5645644674476253806
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -402,11 +402,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 524811825144713317}
     m_Modifications:
-    - target: {fileID: 7938268889762554417, guid: 635874cf04edd3941a32f31f899042ef,
-        type: 3}
-      propertyPath: m_Name
-      value: Rock02
-      objectReference: {fileID: 0}
     - target: {fileID: 6167560320730287706, guid: 635874cf04edd3941a32f31f899042ef,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -476,6 +471,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938268889762554417, guid: 635874cf04edd3941a32f31f899042ef,
+        type: 3}
+      propertyPath: m_Name
+      value: Rock02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 635874cf04edd3941a32f31f899042ef, type: 3}
@@ -582,11 +582,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 524811825144713317}
     m_Modifications:
-    - target: {fileID: 7938268889762554417, guid: 635874cf04edd3941a32f31f899042ef,
-        type: 3}
-      propertyPath: m_Name
-      value: Rock02 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6167560320730287706, guid: 635874cf04edd3941a32f31f899042ef,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -656,6 +651,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.18393146
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938268889762554417, guid: 635874cf04edd3941a32f31f899042ef,
+        type: 3}
+      propertyPath: m_Name
+      value: Rock02 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 635874cf04edd3941a32f31f899042ef, type: 3}
@@ -852,11 +852,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 524811825144713317}
     m_Modifications:
-    - target: {fileID: 7938268889762554417, guid: 635874cf04edd3941a32f31f899042ef,
-        type: 3}
-      propertyPath: m_Name
-      value: Rock02 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 6167560320730287706, guid: 635874cf04edd3941a32f31f899042ef,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -927,6 +922,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.1482929
       objectReference: {fileID: 0}
+    - target: {fileID: 7938268889762554417, guid: 635874cf04edd3941a32f31f899042ef,
+        type: 3}
+      propertyPath: m_Name
+      value: Rock02 (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 635874cf04edd3941a32f31f899042ef, type: 3}
 --- !u!4 &794182109545120441 stripped
@@ -942,11 +942,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 524811825144713317}
     m_Modifications:
-    - target: {fileID: 2228369054539323739, guid: ad1d1a01736753e4593984abc9ed59ee,
-        type: 3}
-      propertyPath: m_Name
-      value: Smoke
-      objectReference: {fileID: 0}
     - target: {fileID: 6250794956610847193, guid: ad1d1a01736753e4593984abc9ed59ee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1001,6 +996,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2228369054539323739, guid: ad1d1a01736753e4593984abc9ed59ee,
+        type: 3}
+      propertyPath: m_Name
+      value: Smoke
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad1d1a01736753e4593984abc9ed59ee, type: 3}
