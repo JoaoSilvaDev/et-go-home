@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1491871995012250484}
   m_LocalRotation: {x: -0.7071067, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0.257, z: 0}
+  m_LocalPosition: {x: 0, y: 0.07, z: 0}
   m_LocalScale: {x: 4.8994064, y: 4.8994064, z: 4.8994064}
   m_Children: []
   m_Father: {fileID: 6533843055287426332}
@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 8741205958405571849}
   - component: {fileID: 7438811932305044309}
   - component: {fileID: 5285228881698998581}
+  - component: {fileID: 2291909013805875124}
   m_Layer: 0
   m_Name: Thruster
   m_TagString: Item
@@ -174,8 +175,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.5, y: 1, z: 1.5}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!114 &5285228881698998581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,6 +208,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2291909013805875124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5923678638378667723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc943b4890068884295466b4331b3d03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inRange: 0
+  marker: {fileID: 5521731989662807289}
+  player: {fileID: 0}
+  mesh: {fileID: 5324987273690640742}
+  collector: {fileID: 0}
 --- !u!1001 &7597382124699303277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -214,11 +232,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6533843055287426332}
     m_Modifications:
-    - target: {fileID: 2724241504861489538, guid: 1fe95adc03f66f0418d0bd33956cbb5a,
-        type: 3}
-      propertyPath: m_Name
-      value: MapMarker
-      objectReference: {fileID: 0}
     - target: {fileID: 2724241504861489565, guid: 1fe95adc03f66f0418d0bd33956cbb5a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -227,7 +240,7 @@ PrefabInstance:
     - target: {fileID: 2724241504861489565, guid: 1fe95adc03f66f0418d0bd33956cbb5a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 2.327
       objectReference: {fileID: 0}
     - target: {fileID: 2724241504861489565, guid: 1fe95adc03f66f0418d0bd33956cbb5a,
         type: 3}
@@ -274,11 +287,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2724241504861489538, guid: 1fe95adc03f66f0418d0bd33956cbb5a,
+        type: 3}
+      propertyPath: m_Name
+      value: MapMarker
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fe95adc03f66f0418d0bd33956cbb5a, type: 3}
 --- !u!4 &5521731989285090544 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2724241504861489565, guid: 1fe95adc03f66f0418d0bd33956cbb5a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7597382124699303277}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5521731989662807289 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2724241504957204884, guid: 1fe95adc03f66f0418d0bd33956cbb5a,
     type: 3}
   m_PrefabInstance: {fileID: 7597382124699303277}
   m_PrefabAsset: {fileID: 0}
