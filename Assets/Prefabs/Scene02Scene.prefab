@@ -677,7 +677,7 @@ PrefabInstance:
     - target: {fileID: 4879293255880836961, guid: fc4df196008d1e746a006a282347e894,
         type: 3}
       propertyPath: lengthInSec
-      value: 3
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 4879293255880836961, guid: fc4df196008d1e746a006a282347e894,
         type: 3}
@@ -987,7 +987,7 @@ PrefabInstance:
     - target: {fileID: 5351374843407994765, guid: fc4df196008d1e746a006a282347e894,
         type: 3}
       propertyPath: startDelay.scalar
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc4df196008d1e746a006a282347e894, type: 3}

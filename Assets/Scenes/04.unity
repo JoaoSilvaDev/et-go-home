@@ -562,7 +562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a871bc870285eaf4cba553a4fde7253a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 1000
+  range: 17
   itemCollectScene: 4
 --- !u!114 &1507296710
 MonoBehaviour:

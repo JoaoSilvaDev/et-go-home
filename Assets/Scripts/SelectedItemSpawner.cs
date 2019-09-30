@@ -3,7 +3,7 @@
 public class SelectedItemSpawner : MonoBehaviour
 {
     [SerializeField] private ItemsList itemsList;
-    [SerializeField] private float scale = 0.1f;
+    [SerializeField] private float instanceScale = 0.2f;
 
     private void Start()
     {
@@ -22,6 +22,7 @@ public class SelectedItemSpawner : MonoBehaviour
         }
 
         //ItemCollector.ConsumeSelectedItem();
-        Instantiate(itemsList.Items[selected], transform.position, Quaternion.identity);
+        var obj = Instantiate(itemsList.Items[selected], transform.position, Quaternion.identity);
+        obj.transform.localScale = Vector3.one * instanceScale;
     }
 }
