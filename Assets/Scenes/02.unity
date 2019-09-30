@@ -493,7 +493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planeManager: {fileID: 1058817920}
-  objectToInstantiate: {fileID: 3536407952879133302, guid: 4eab2be6adca3eb4fa3e0622e6bba3d5,
+  objectToInstantiate: {fileID: 1815945045409182611, guid: d3b54bf867577dd4d9b9cddc864e8e96,
     type: 3}
   onSuitablePlaneFound:
     m_PersistentCalls:
