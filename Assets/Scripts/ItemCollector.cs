@@ -54,6 +54,13 @@ public class ItemCollector : MonoBehaviour
 
     }
 
+    public static int ConsumeSelectedItem()
+    {
+        var selected = SelectedItem;
+        SelectedItem = -1;
+        return selected;
+    }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;

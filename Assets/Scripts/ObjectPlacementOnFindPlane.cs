@@ -65,7 +65,8 @@ public class ObjectPlacementOnFindPlane : MonoBehaviour
     private void OnSuitablePlaneFound(ARPlane plane)
     {
         onSuitablePlaneFound.Invoke();
-        Instantiate(objectToInstantiate, plane.center, Quaternion.identity);
+        if(objectToInstantiate)
+            Instantiate(objectToInstantiate, plane.center, Quaternion.identity);
         _found = true;
     }
 }
