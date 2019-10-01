@@ -20,6 +20,7 @@ public class AstronautWakeupScripting : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(Vector3.Distance(transform.position, cam.position));
         if (Vector3.Distance(transform.position, cam.position) < minDistance && !wokeup)
         {
             wokeup = true;
