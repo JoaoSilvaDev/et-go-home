@@ -254,7 +254,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Place the fixed ship
+  m_Text: Launch the ship!
 --- !u!222 &669522888
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -790,7 +790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e6d98632080774489c89c0f58b04bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 5
+  sceneIndex: 6
   loadOnEnable: 0
 --- !u!4 &1985226831 stripped
 Transform:
