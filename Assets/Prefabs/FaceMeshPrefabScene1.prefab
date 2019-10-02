@@ -512,6 +512,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.52853125
       objectReference: {fileID: 0}
+    - target: {fileID: 2435242064576071144, guid: c26cfa7da651d7a47b0a900773080a74,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4663888
+      objectReference: {fileID: 0}
     - target: {fileID: 1763058224437685248, guid: c26cfa7da651d7a47b0a900773080a74,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -526,6 +531,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2321652892224012594, guid: c26cfa7da651d7a47b0a900773080a74,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c26cfa7da651d7a47b0a900773080a74, type: 3}
@@ -637,6 +647,16 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957262199393449104, guid: ad1d1a01736753e4593984abc9ed59ee,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.minScalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957262199393449104, guid: ad1d1a01736753e4593984abc9ed59ee,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad1d1a01736753e4593984abc9ed59ee, type: 3}

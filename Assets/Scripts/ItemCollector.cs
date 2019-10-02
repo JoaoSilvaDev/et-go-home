@@ -8,6 +8,7 @@ public class ItemCollector : MonoBehaviour
     [Tooltip("Range around character where player can grab items")]
     [SerializeField]
     public float range;
+    public Transform player;
 
     [SerializeField] private int itemCollectScene;
 
@@ -31,7 +32,7 @@ public class ItemCollector : MonoBehaviour
 
                 if(item != null)
                 {
-                    if(Vector3.Distance(transform.position, item.transform.position) < range)
+                    if(Vector3.Distance(player.position, item.transform.position) < range)
                         SelectItem(item);
                 }
             }
